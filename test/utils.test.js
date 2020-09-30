@@ -9,10 +9,19 @@ test('should randomly return heads or tails', (expect) => {
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = flipCoin();
+    const actual2 = flipCoin();
+    const actual3 = flipCoin();
+    const actual4 = flipCoin();
+    const actual5 = flipCoin();
 
+    const possibleValues = ['heads', 'tails'];
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(typeof actual, 'string');
+    expect.equal(possibleValues.includes(actual), true);
+    expect.equal(possibleValues.includes(actual2), true);
+    expect.equal(possibleValues.includes(actual3), true);
+    expect.equal(possibleValues.includes(actual4), true);
+    expect.equal(possibleValues.includes(actual5), true);
 });
 
 
