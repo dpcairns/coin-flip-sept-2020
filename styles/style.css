@@ -28,6 +28,10 @@ body {
     background-color: var(--color2);
 }
 
+input[type="radio"]:checked {
+    transform: scale(2);
+}
+
 main {
     display: flex;
     flex-direction: column;
