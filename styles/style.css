@@ -28,8 +28,12 @@ body {
     background-color: var(--color2);
 }
 
-input[type="radio"]:checked {
-    transform: scale(2);
+input[type="radio"]:checked + img {
+    border: solid 5px blue;
+}
+
+input[type="radio"] {
+    display: none;
 }
 
 main {
